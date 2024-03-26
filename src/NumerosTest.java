@@ -35,5 +35,36 @@ class NumerosTest {
         //ASSERT
         assertEquals(1, resultado);
     }
-    
+
+
+    @Test
+    void sonIguales4(){
+        //ARRANGE
+        int a=14, b=14, c=33;
+        //ACT
+        int resultado=Numeros.sonIguales(a,b,c);
+        //ASSERT
+        assertEquals(1,resultado);
+    }
+
+    @Test
+    void sonIguales5(){
+        //ARRANGE
+        int a=32, b=55, c=55;
+        //ACT
+        int resultado=Numeros.sonIguales(a,b,c);
+        //ASSERT
+        assertEquals(1, resultado);
+    }
+
+    @Test
+    void sonIguales6(){
+        //ARRANGE
+        int a=329, b=329, c=329;
+        //ACT
+        int resultado=Numeros.sonIguales(a,b,c);
+        //ASSERT
+        assertEquals(0,resultado);
+
+    }
 }
